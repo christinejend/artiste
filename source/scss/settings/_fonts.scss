@@ -1,0 +1,33 @@
+/* Christine Jendrzejczyk
+	05/02/2017
+ 	Artiste
+		Fonts - settings
+*/
+
+
+
+
+@font-face {
+  font-family: 'Glyphs';
+  src: url("../font/fontawesome/fontawesome-webfont.eot");
+  src: url("../font/fontawesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"),
+  	   url("../font/fontawesome/fontawesome-webfont.woff2") format("woff2"),
+       url("../font/fontawesome/fontawesome-webfont.woff") format("woff"), 
+       url("../font/fontawesome/fontafontawesome-webfont.ttf") format("truetype"),
+       url("../font/fontawesome/fontawesome-webfont.svg#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+   }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../font/fontawesome/fontawesome-webfont.eot");
+  src: url("../font/fontawesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"),
+       url("../font/fontawesome/fontawesome-webfont.woff2") format("woff2"),
+       url("../font/fontawesome/fontawesome-webfont.woff") format("woff"), 
+       url("../font/fontawesome/fontafontawesome-webfont.ttf") format("truetype"),
+       url("../font/fontawesome/fontawesome-webfont.svg#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+   }
+

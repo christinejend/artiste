@@ -1,0 +1,29 @@
+/* Christine Jendrzejczyk
+	05/02/2017
+ 	Artiste
+		footer - components
+*/
+.footer{
+	background-color: black;
+	font-size: 0.9em;
+	&__list{
+	margin-left: 23%;
+	margin-top: 1em;
+	padding: 2em;
+	}
+	&__elt{
+		display: inline;
+		padding: 0.5em;
+	}	
+	&__link{
+		color: white;
+		font-size: 1.2em
+	}
+}
+.design{
+	margin-left: 15%;	
+	
+	&__link{
+		color: lightgray;
+	}
+}

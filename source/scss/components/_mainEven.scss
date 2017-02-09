@@ -1,0 +1,68 @@
+/* Christine Jendrzejczyk
+	05/02/2017
+ 	Artiste
+		mainQuote - components
+*/
+
+
+.mainEven{ // HOVER IMAGE EN GRIS??? 
+	height: 27.7em;
+	&__G{
+		width: 50%;
+	    height: 25em;
+	    background: url(../img/even2.jpg);
+	    background-position: 37px -16px;
+		-webkit-clip-path: polygon(98% 52%, 0 0, 0 100%);
+        clip-path: polygon(98% 50%, 0% 0%, 0% 100%);
+	//background-image: url(../img/every.jpg); 
+ 	//transition: 0.4s cubic-bezier(1, -1, 0, 2);
+  //clip-path: polygon(50% 5%, 0% 100%, 100% 100%); 
+	}
+	&__D{
+		width: 50%;
+	    height: 25em;
+		position: relative;
+		right: -50%;
+    	top: -25em;
+    	background: url(../img/even.jpg);
+    	 background-position: 83px 3px;
+    	 background-size: 116%;
+		-webkit-clip-path: polygon(0 54%, 100% 0, 99% 100%);
+		clip-path: polygon(0 50%, 100% 0, 99% 100%);
+		/*
+		width: 48%;
+		-webkit-clip-path: polygon(100% 52%, 0 0, 0 100%);
+        clip-path: polygon(100% 50%, 0% -14%, 1% 100%);
+        transform: rotate(90deg);
+        float: right;*/
+	}	
+}
+
+.mainEvenG{
+	&__title{
+		@include boxStyles(2em, 22% );
+		position: relative;
+		top: 5em;
+		left: 28%;
+	}
+	&__date{
+		@include boxStyles(1.7em, 29% );
+		position: relative;
+		top: 6em;
+		left: 24%;
+	}
+}
+.mainEvenD{
+	&__title{
+		@include boxStyles(2em, 51% );
+		position: relative;
+		top: 5em;
+		left: 37%;
+	}
+	&__date{
+		@include boxStyles(1.7em, 27% );
+		position: relative;
+		top: 6em;
+		left:47%;
+	}
+}

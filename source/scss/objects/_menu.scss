@@ -1,0 +1,58 @@
+/* Christine Jendrzejczyk
+	05/02/2017
+ 	Artiste
+		Menu - objects
+*/
+
+.menu{
+	z-index: 50;
+	position: fixed;
+	width: 50%;
+	&__elt{
+		background-color: black;		
+		padding: 0.2em;
+		border-bottom: 1px solid #7EC9CD;
+		display: inline;
+		width: 200%;
+	}
+	&__list{
+		margin-left: 14%;
+
+		padding: 0.2em;
+	}
+	&__link{
+		color: white;
+		text-decoration: none;
+		padding: 0.5em 0.5em 0 0.5em;
+	}
+	/*&__drop::after{
+		content: ' X -';
+    	font-family: 'Glyphs';
+	}*/
+	&__drop{
+		padding: 0.3em 0.4em;
+		border: 1px solid #7EC9CD;
+		cursor: pointer;
+		//writing-mode:tb-rl;
+		color:white;
+		position: relative;
+		top: 0.75em;
+		left:6%;
+		font-size: 1em;
+	}
+	&__drop::after{
+		content: ' ';
+    font-family: 'Glyphs';
+	}
+	/**/
+	&__check:checked ~ ul{
+  position: absolute;
+  top: -5em;
+  	
+	}
+	&__check{
+	position: absolute;
+	top: 105em;
+
+	}
+}

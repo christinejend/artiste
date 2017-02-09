@@ -1,0 +1,47 @@
+/* Christine Jendrzejczyk
+	05/02/2017
+ 	Artiste
+		bioHeader - components
+*/
+.mainBio{
+	
+	&__paraD{
+		float: right;
+		margin-top: -19em;
+		margin-right: 7%;
+		width: 34%;
+	}
+	&__paraG{
+		width: 34%;
+		margin-left: 9%;
+	}
+	&__paraG-suite{
+		width: 36%;
+		margin-left: 9%;
+		margin-top: 1em;
+		padding-bottom: 4em;
+	}
+	&__photoD{
+		z-index: 1;
+		height: 25em;
+		width: 50%;
+		float: right;
+		margin-top: 6em;
+	    background: url(../img/night.jpg);
+	   // background-size: 70%;
+	    background-position: -15px -8px;
+		-webkit-clip-path: polygon(100% 0%, 0% 9%, 0% 70%, 100% 85%);
+        clip-path: polygon(100% 0%, 0% 9%, 0% 70%, 100% 85%);
+	}
+	&__photoG{
+		z-index: 1;
+		width: 50%;
+	    height: 25em;
+	    //position: absolute;
+	    background: url(../img/io.jpg);
+	    background-size: 70%;
+	    background-position: 95px -16px;
+		-webkit-clip-path: polygon(0% 0%, 96% 10%, 95% 70%, 0% 85%);
+        clip-path: polygon(0% 0%, 96% 10%, 95% 70%, 0% 85%);
+	}
+}

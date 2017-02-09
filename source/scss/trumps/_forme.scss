@@ -1,0 +1,9 @@
+
+ @import "tools/mixin";
+
+ .main{
+ 	@include tri();
+		&__title{
+	 	@include triTitle();
+		}
+}

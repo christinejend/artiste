@@ -1,0 +1,17 @@
+/* Christine Jendrzejczyk
+	05/02/2017
+ 	Artiste
+		mainInfos - objects*/
+
+
+.mainInfo{
+	width: 40%;
+	margin: 0 auto;
+	margin-top: 7em;
+	&__plus{
+		color: #7EC9CD;
+		padding-bottom: 0.2em;
+		margin-left: 1%;
+		border-bottom: 1px solid #7EC9CD;
+	}
+}

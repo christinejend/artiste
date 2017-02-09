@@ -1,0 +1,29 @@
+.single{
+	&__title{
+		position: absolute;
+		left: 0;
+		width: 90%;
+		color: black;
+		font-size: 1.3em;
+		 -webkit-clip-path: polygon(98% 52%, 0 0, 0 100%);
+    	clip-path: polygon(16% 50%, 0% 0%, 0% 100%);
+    	background-color: #7EC9CD;
+    	height: 11em;
+	}
+	&__title-posi{
+		position: relative;
+		top: 5em;
+		left: 3%;
+	}
+	&__list{
+		width: 64%;
+		margin: 2em auto;
+		padding-bottom: 3em;
+	}
+	&__elt{
+		display: inline;
+	}
+	&__poch{
+		padding: 0.5em;
+	}
+}

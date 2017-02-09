@@ -1,0 +1,28 @@
+/* Christine Jendrzejczyk
+	05/02/2017
+ 	Artiste
+		ROOT  - base*/
+
+body{
+	font-size: 1.2em;
+	font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+	//font-family: 'Segoe UI,Frutiger', 'Frutiger Linotype', 'Dejavu Sans' , 'Helvetica Neue',Arial,sans-serif;
+}
+a{
+	text-decoration: none;
+}
+p{
+	line-height: 1.5;
+}
+.hidden{
+	text-indent: -10000px;
+}
+
+.accueil{
+	background-color: black;
+	color: white;	
+}
+.active{
+	background-color:#7EC9CD ;
+	color: black;
+}
