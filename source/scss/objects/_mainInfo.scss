@@ -9,9 +9,14 @@
 	margin: 0 auto;
 	margin-top: 7em;
 	&__plus{
+		padding: 0 0.3em;
 		color: #7EC9CD;
 		padding-bottom: 0.2em;
 		margin-left: 1%;
-		border-bottom: 1px solid #7EC9CD;
+		border-bottom: 2px solid #7EC9CD;
+	}
+	&__plus:hover{
+		transition: .12s ease-in-out;
+		border-top: 2px solid #7EC9CD;
 	}
 }

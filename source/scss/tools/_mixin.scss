@@ -45,3 +45,11 @@ background-size: cover;
     min-height: 38em;
     background-size: 119%;
 }
+@mixin circle($color){
+    color: $color;
+    font-family: 'Glyphs';
+    font-size: 2em;
+    padding: 0.5em;
+  
+    border: 2px solid $color;
+}

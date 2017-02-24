@@ -1,7 +1,7 @@
 var 
 	gulp = require('gulp'),
-	sass = require('gulp-sass'),
-	eslint = require('gulp-eslint');
+	sass = require('gulp-sass');
+	//eslint = require('gulp-eslint');
 
 var 
 	source = 'source/',
@@ -23,14 +23,14 @@ gulp.task('sass', function(){
 		.pipe(sass(css.sassOpts))
 		.pipe(gulp.dest(css.out))
 })
-
+/*
  
 gulp.task('lint', () => {
     // ESLint ignores files with "node_modules" paths. 
     // So, it's best to have gulp ignore the directory as well. 
     // Also, Be sure to return the stream from the task; 
     // Otherwise, the task may end before the stream has finished. 
-    return gulp.src(['source/**/*','!node_modules/**'])
+    return gulp.src(['source/***','!node_modules/**'])
         // eslint() attaches the lint output to the "eslint" property 
         // of the file object so it can be used by other modules. 
         .pipe(eslint())
@@ -43,7 +43,7 @@ gulp.task('lint', () => {
 });
  
 
-
+*/
 gulp.task('default', function(){
-	gulp.watch(css.watch, ['sass'], ['lint']);
+	gulp.watch(css.watch, ['sass']/*,['lint']*/);
 })

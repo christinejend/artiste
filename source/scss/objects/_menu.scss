@@ -9,15 +9,14 @@
 	position: fixed;
 	width: 50%;
 	&__elt{
-		background-color: black;		
+		//background-color: black;		
 		padding: 0.2em;
 		border-bottom: 1px solid #7EC9CD;
 		display: inline;
-		width: 200%;
 	}
 	&__list{
 		margin-left: 14%;
-
+		width: 100%;
 		padding: 0.2em;
 	}
 	&__link{

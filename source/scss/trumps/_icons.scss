@@ -5,20 +5,37 @@
 */
 
 .yt::before {
-    content: " ";
-    color: white;
-    font-family: 'Glyphs';
-    font-size: 2em;
+    content: "";
+      @include circle(#E62117);
 }
 .twi::before {
-    content: " ";
-    color: white;
-    font-family: 'Glyphs';
-    font-size: 2em;
+    content: "";
+      @include circle(#1DA1F2);
 }
 .fb::before {
-    content: " ";
+    content: "";
+      @include circle(#3B5998);
+      padding: 0.5em 0.7em;
+}
+
+.insta::before {
+    @include circle(#954BC4);
+   content: "";
+}
+
+.yt:hover:before{
+    background-color: #E62117;
     color: white;
-    font-family: 'Glyphs';
-    font-size: 2em;
+}
+.twi:hover:before{
+    background-color: #1DA1F2;
+    color: white;
+}
+.fb:hover:before{
+    background-color: #3B5998;
+    color: white;
+}
+.insta:hover:before{
+     background-color: #954BC4;
+    color: white;
 }

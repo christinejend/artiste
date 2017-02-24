@@ -4,7 +4,7 @@
 		footer - components
 */
 .footer{
-	background-color: black;
+	background-color: rgba(0,0,0,0.45);
 	font-size: 0.9em;
 	&__list{
 	margin-left: 23%;
@@ -12,16 +12,15 @@
 	padding: 2em;
 	}
 	&__elt{
-		display: inline;
+		display: inline-block;
 		padding: 0.5em;
 	}	
 	&__link{
-		color: white;
-		font-size: 1.2em
+		color: transparent;
+
 	}
 }
 .design{
-	margin-left: 15%;	
 	
 	&__link{
 		color: lightgray;

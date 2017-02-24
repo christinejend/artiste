@@ -1,10 +1,9 @@
 .single{
 	&__title{
 		position: absolute;
-		left: 0;
 		width: 90%;
 		color: black;
-		font-size: 1.3em;
+		font-size: 1.5em;
 		 -webkit-clip-path: polygon(98% 52%, 0 0, 0 100%);
     	clip-path: polygon(16% 50%, 0% 0%, 0% 100%);
     	background-color: #7EC9CD;
