@@ -1,6 +1,7 @@
 .single{
 	&__title{
 		position: absolute;
+		top: 22.5em;
 		width: 90%;
 		color: black;
 		font-size: 1.5em;
@@ -15,7 +16,7 @@
 		left: 3%;
 	}
 	&__list{
-		width: 64%;
+		width: 60%;
 		margin: 2em auto;
 		padding-bottom: 3em;
 	}
@@ -24,5 +25,14 @@
 	}
 	&__poch{
 		padding: 0.5em;
+	}
+}
+
+
+@media (max-width:1080px) {
+	.single{
+		&__list{
+			width: 66%;
+		}
 	}
 }

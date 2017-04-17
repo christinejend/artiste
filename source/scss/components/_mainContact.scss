@@ -1,0 +1,78 @@
+.cont{
+  &__design{
+      border-bottom: 2px solid #7EC9CD;
+      width: auto;
+    }
+  &__text{
+    text-align: center;
+    margin: 2em 0;
+  }
+  &__bar{
+    //border:1px solid #d1c7ac;
+  	width: 65%;
+  	color: #7EC9CD;
+  	padding:3px;
+    font-size: 0.9em;
+    height: 2.7em;
+    background-color: unset;
+    border: unset;
+    //margin-bottom: -0.5em;
+
+  }
+  &__bar::target{
+    border: unset;
+  }
+
+  &__form{
+  width: 25%;
+  margin: 0 auto;
+  }
+   &__lab{
+  display: inline-block;
+  //width: 109%;
+  text-align: left;
+// background-color:#7EC9CD;
+  color: #7EC9CD;
+  //border-bottom: 1px solid #7EC9CD;
+  //padding: 0em 0.5em 0.45em 0.5em;
+  margin: 1em 0.5em;
+  }
+  &__btn{
+
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#36474e+0,7ec9cd+100 */
+  background: #36474e; /* Old browsers */
+  background: -moz-linear-gradient(top, #36474e 0%, #7ec9cd 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #36474e 0%,#7ec9cd 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #36474e 0%,#7ec9cd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36474e', endColorstr='#7ec9cd',GradientType=0 ); /* IE6-9 */
+     color: black;
+     border: none;
+     padding: 0.7em 1em;
+     display: inherit;
+     margin: 2.5em 0 2.5em 40%;
+
+  }
+  &__bar:focus{
+    border: none;
+  }
+  &__btn:hover{
+    background: none;
+    transition: 0.2s ease-in;
+    background-color: #283949;
+    color: #7EC9CD;
+  }
+  &__labDeco{
+
+  }
+  &__name{
+    padding-right: 1.6em;
+  }
+  &__email{
+      padding-right: 1.4em;
+  }
+  &__msg{
+    vertical-align: middle;
+  }
+
+
+}

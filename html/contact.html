@@ -7,10 +7,10 @@
     <meta name="keywords" content="Hardwell, Dj, Christine Jendrzejczyk" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../buildcss/main.css" />
-	<title>Hardwell - Evenement</title>
+	<title>Hardwell - Contact</title>
 </head>
-<body class="even">
-	<header class="evenHeader">
+<body class="cont">
+	<header class="contHeader">
 		<nav class="menu">
 			<input type="checkbox" title="menu" class="menu__check" id="toogle-nav" checked>
 			<label for="toogle-nav" class="menu__drop"></label>
@@ -18,42 +18,35 @@
 					<li class="menu__elt"><a href="../index.html"  class="menu__link" title="">Accueil</li></a>
 					<li class="menu__elt"><a href="biographie.html" title="Lien vers la biographie de Hardwell" class="menu__link">Biographie</li></a>
 					<li class="menu__elt"><a href="discographie.html" title="Lien vers la Discographie de Hardwell" class="menu__link">Discographie</li></a>
-					<li class="menu__elt  active">Evenement</li></a>
-					<li class="menu__elt"><a href="contact.html" title="Lien vers la page de contact de Hardwell" class="menu__link">Contact</li></a>
-
-
+					<li class="menu__elt"><a href="evenement.html" title="Lien vers la page évenement de Hardwell" class="menu__link">Evenement</li></a>
+					<li class="menu__elt   active" >Contact</li></a>
 			</ul>
 		</nav>
 	</header>
-	<main class="mainEven">
+	<main class="mainContact">
 		<div class="main">
-			<h1 role="heading" aria-level="1" class="main__title">Evenement</h1>
+			<h1 role="heading" aria-level="1" class="main__title">Contact</h1>
 		</div>
-		<div class="even--g">
-			<h1 role="heading" aria-level="1" class="even__title1">Pompadou</h1>
-			<h2 role="heading" aria-level="2" class="even__feat"> Dj Snake, Steve Angelo, Martin Garrix.
-			</h2>
-			<p class="even__date">Du 05 Mai au 7 Mai 2017</p>
-			<p class="even__adr">L'addresse sera dévoilée bientôt<br>
-			</p>
-			<p class="even__price">Sur prévente uniquement</p>
-			<p class="even__num">+32 4 123 152 558</p>
-		</div>
-		<div class="even--photo-d"></div>
-		<a href="" title=""><div class="evenFormlink"><span class="posEven">Besoin d'information en plus? Demander par ici !</span></div></a>
-		<div class="even--photo-g"></div>
-		<div class="even--d">
-			<h1 role="heading" aria-level="1" class="even__title1">Reverzia</h1>
-			<h2 role="heading" aria-level="2" class="even__feat"> Dj Snake, Steve Angelo, Martin Garrix.
-			</h2>
-			<p class="even__date">11 Mars 2017 - Dès 20h<br>
-			<p class="even__adr">Palais 15 de Revencore - 4100 Trèsloin
-			</p>
-			<p class="even__price">Prévente : 24€ ---- Ticket : 30€</p>
-			<p class="even__num">+32 4 123 152 558</p>
-		</div>
+    <div class="cont__intro">
+        <p class="cont__text">Besoin d'information en plus? Ou simplement l'envie de nous laisser un petit mot, profitez-en !</p>
+        <form class="cont__form" action="index.html" method="post">
+					<fieldset class="cont__design">
+            <label class="cont__lab cont__name" for="name">Nom</label><input class="cont__bar" type="text" name="name">
+					</fieldset>
+					<fieldset class="cont__design">
+						<label class="cont__lab cont__first" for="firstname">Prénom</label><input class="cont__bar" type="text" name="firstame" >
+					</fieldset>
+					<fieldset class="cont__design">
+						<label class="cont__lab cont__email" for="email">Email</label><input class="cont__bar" type="email" name="email">
+					</fieldset>
+					<fieldset class="cont__design">
+						<label class="cont__lab cont__msg" for="msg">Message</label><textarea class="cont__bar" type="area" name="msg" value="" height="100"></textarea>
+					</fieldset>
+						<input type="submit" class="cont__btn" name="" value="Envoyer">
+        </form>
+    </div>
 	</main>
-	<footer class="footer even__footer">
+	<footer class="footer">
 			<ul class="footer__list">
 					<!--<a href="" title=""><li class="footer__Elt">Accueil</li></a>-->
 					<li class="footer__elt"><a href="" title="" class="footer__link fb">Facebook</li></a>

@@ -15,5 +15,8 @@
     "hardwell"
   ],
   "author": "christine jend",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "gulp-sass": "^3.1.0"
+  }
 }

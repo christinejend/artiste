@@ -1,5 +1,112 @@
-@import "mainBio.scss";
+.mainEven{
 
-.even--d{
-	//@extend .mainBio__photo--g;
+}
+
+
+.even{
+	&__addr, &__price, &__num, &__date{
+		line-height: 3;
+	}
+	&__footer{
+		margin-top: 42em;
+	}
+	&__title1{
+		font-size: 1.3em;
+		margin-bottom: 1.2em;
+		margin-left: 21%;
+	}
+	/*&__date, &__price{
+		margin: 0.5em 0 0.5em 10.5%;
+	}
+	&__num{
+		margin-left: 16%;
+	}*/
+	&--d{
+		float: right;
+		margin-top: 4em;
+		margin-right: 8%;
+		width: 35%;
+	}
+	&--g{
+		width: 34%;
+		margin: 5em 0 5em 17%;
+	}
+	&--photo-d{
+		z-index: 1;
+		height: 25em;
+		width: 50%;
+		float: right;
+		margin-top: -20em;
+			background: url(../img/night.jpg);
+		 // background-size: 70%;
+			background-position: -15px -8px;
+		-webkit-clip-path: polygon(100% 0%, 0% 9%, 0% 70%, 100% 85%);
+				clip-path: polygon(100% 0%, 0% 9%, 0% 70%, 100% 85%);
+
+	}
+	&--photo-g{
+
+
+						z-index: 1;
+						width: 50%;
+						float: left;
+							height: 25em;
+							//position: absolute;
+							background: url(../img/io.jpg);
+							background-size: 70%;
+							background-position: 95px -16px;
+						-webkit-clip-path: polygon(0% 0%, 96% 10%, 95% 70%, 0% 85%);
+								clip-path: polygon(0% 0%, 96% 10%, 95% 70%, 0% 85%);
+	}
+}
+.evenFormlink{
+	background-color: #7EC9CD;
+
+width: 100%;
+color: black;
+font-size: 1.5em;
+-webkit-clip-path: polygon(50% 27%, 100% 50%, 50% 79%, 0% 53%);
+clip-path:polygon(50% 27%, 100% 50%, 50% 79%, 0% 53%);
+height: 11em;
+position: relative;
+}
+
+.posEven{
+	position: absolute;
+	top: 5em;
+right: 32%;
+}
+@media (max-width: 1080px) {
+	.evenFormlink{
+		margin: -3em 0;
+	}
+	.posEven{
+		right: 21%;
+	}
+
+	.even__footer{
+			margin-top: 34em;
+		}
+
+}
+
+@media (max-width: 1005px) {
+	.even--g{
+		margin-left: 11%;
+	}
+}
+
+@media (max-width: 699px) {
+	.even--photo-d{
+		z-index: 1;
+		opacity: 0.7;
+    float: unset;
+    width: 100%;
+    margin-top: -17em;
+	}
+	.even--g{
+		z-index: 5;
+		background-color: rgba(243, 240, 240, 0.72);
+		margin: 0 auto;
+	}
 }

@@ -14,15 +14,21 @@
 	&__elt{
 		display: inline-block;
 		padding: 0.5em;
-	}	
+	}
 	&__link{
 		color: transparent;
 
 	}
 }
 .design{
-	
+
 	&__link{
 		color: lightgray;
+	}
+}
+@media (max-width: 1080px){
+	.footer__list{
+		margin-left: 12%;
+		margin-top: 2em;
 	}
 }
