@@ -4,15 +4,34 @@
 		bioHeader - components
 */
 .mainBio{
-	
+	font-size: 1.05em;
+	&__title{
+		position: absolute;
+		top: 6.2em;
+		left: 57%;
+		font-size: 1.2em;
+		font-style: italic;
+	}
+	&__cta{
+		color: #7ec9cd;
+		padding-bottom: 0.1em;
+		border-bottom: 1.7px solid #7ec9cd;
+		&:hover{
+			/*color: black;
+			padding-bottom: 0.1em;
+			border-bottom: 2px solid black;*/
+			transition: .12s ease-in-out;
+			border-top: 1.7px solid #7EC9CD;
+		}
+	}
 	&__paraD{
 		float: right;
-		margin-top: -22em;
+		margin-top: -21em;
 		margin-right: 8%;
 		width: 35%;
 	}
 	&__paraG{
-		width: 34%;
+		width: 35%;
 		margin-left: 9%;
 	}
 	&__paraG-suite{
@@ -26,22 +45,163 @@
 		height: 25em;
 		width: 50%;
 		float: right;
-		margin-top: 6em;
+		margin-top: 8em;
 	    background: url(../img/night.jpg);
-	   // background-size: 70%;
-	    background-position: -15px -8px;
+	    background-size: 38em;
+	    background-position: -1em 0em;
 		-webkit-clip-path: polygon(100% 0%, 0% 9%, 0% 70%, 100% 85%);
-        clip-path: polygon(100% 0%, 0% 9%, 0% 70%, 100% 85%);
+        clip-path: url(#clipPhotoD);
 	}
 	&__photoG{
 		z-index: 1;
-		width: 50%;
+		width: 52%;
 	    height: 25em;
 	    //position: absolute;
 	    background: url(../img/io.jpg);
-	    background-size: 70%;
-	    background-position: 95px -16px;
+	    background-size: 23em;
+	    background-position: 5em 1em;
 		-webkit-clip-path: polygon(0% 0%, 96% 10%, 95% 70%, 0% 85%);
-        clip-path: polygon(0% 0%, 96% 10%, 95% 70%, 0% 85%);
+        clip-path: url(#clipPhotoG);
+	}
+}
+@media (max-width: 1332px) {
+	.mainBio{
+		&__photoD{
+			margin-right: -43%;
+			margin-top: 14%;
+		}
+	}
+}
+
+@media (max-width: 1283px) {
+	.mainBio{
+		&__photoD{
+			margin-right: -43%;
+			margin-top: 24%;
+		}
+	}
+}
+
+
+@media (max-width: 1110px) {
+	.mainBio{
+		&__paraD, &__paraG{
+			width: 38%;
+		}
+		&__title{
+			left: 54%;
+		}
+	}
+}
+
+@media (max-width:1106px) {
+	.mainBio{
+		&__photoD{
+			margin-right: -46%;
+		}
+	}
+}
+
+@media (max-width:990px) {
+	.mainBio{
+		&__title{
+			top: 24em;
+			left: 29%;
+		}
+		&__photoG, &__photoD{
+			width: 84%;
+			margin-right: 0%;
+			margin-top: 2em;
+		}
+		&__paraD{
+			float: unset;
+			margin: 0 auto;
+			margin-top: -1em;
+			width: 60%;
+		}
+		&__paraG{
+			margin: 0 auto;
+			margin-top: 6em;
+			width: 60%;
+	}
+	&__paraG-suite{
+		 margin: unset;
+		 margin: 0 auto;
+		margin-top: 1em;
+		width: 60%;
+	 }
+}
+}
+@media (max-width:852px) {
+	.mainBio{
+		&__title{
+			left: 20%;
+		}
+		&__paraG{
+			margin-top: 27em;
+		}
+	}
+}
+@media (max-width:670px) {
+	.mainBio{
+		&__paraD, &__paraG, &__paraG-suite{
+			width: 72%;
+		}
+		&__title{
+			left: 14%;
+		}
+	}
+}
+@media (max-width:540px) {
+	.mainBio{
+		&__photoD{
+			    background-position: -8em 0em;
+		}
+		&__photoG{
+			    background-position: -1em 1em;
+		}
+	}
+}
+@media (max-width:370px) {
+	.mainBio{
+		&__photoD{
+			    background-position: -11em 0em;
+		}
+		&__photoG{
+			    background-position: -4em 1em;
+		}
+	}
+}
+@media (max-width:486px) {
+	.mainBio{
+		&__title{
+			font-size: 1.1em;
+			top: 27em;
+		}
+	}
+}
+
+@media (max-width:438px) {
+	.mainBio{
+		&__title{
+			left: 8%;
+		}
+	}
+}
+
+@media (max-width:398px) {
+	.mainBio{
+		&__title{
+			left: 14%;
+    top: 26em;
+    width: 50%;
+		}
+	}
+}
+@media (max-width:345px) {
+	.mainBio{
+		&__title{
+    width: 61%;
+		}
 	}
 }

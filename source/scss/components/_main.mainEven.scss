@@ -4,50 +4,74 @@
 		mainQuote - components
 */
 
-
 .mainEven{ // HOVER IMAGE EN GRIS???
 	height: 27.7em;
+
 	&__G{
 		width: 50%;
 	    height: 25em;
+			margin-top:-1em;
+    padding:0;
+    overflow:hidden;
+    overflow:warp;
 	    background: url(../img/even2.jpg);
-	    background-position: 37px -16px;
+	    background-position: -0.5em;
 		-webkit-clip-path: polygon(98% 52%, 0 0, 0 100%);
-        clip-path: polygon(98% 50%, 0% 0%, 0% 100%);
+		clip-path: polygon(98% 52%, 0 0, 0 100%);
+		-webkit-clip-path: url(#clipTriG);
+		clip-path: url(#clipTriG);
+		/*Firefox*/
+		/*clip-path: url("#clipTriG");
+		-webkit-clip-path:url("#clipTriG");*/
+        //clip-path: polygon(98% 50%, 0% 0%, 0% 100%);
 	//background-image: url(../img/every.jpg);
  	//transition: 0.4s cubic-bezier(1, -1, 0, 2);
   //clip-path: polygon(50% 5%, 0% 100%, 100% 100%);
+	&:hover{
+		-webkit-filter: grayscale(75%);
+		filter: grayscale(75%);
 	}
+}
 	&__D{
 		width: 50%;
 	    height: 25em;
-		position: relative;
-		right: -50%;
-    	top: -25em;
+			margin:0;
+	    padding:0;
+	    overflow:hidden;
+	    overflow:warp;
+			position: absolute;
+	right: 0%;
+	top: 55em;
     	background: url(../img/even.jpg);
-    	 background-position: 83px 3px;
+    	 background-position: -2em;
     	 background-size: 116%;
 		-webkit-clip-path: polygon(0 54%, 100% 0, 99% 100%);
 		clip-path: polygon(0 50%, 100% 0, 99% 100%);
+
+		-webkit-clip-path: url(#clipTriD);
+		clip-path: url(#clipTriD);
 		/*
 		width: 48%;
 		-webkit-clip-path: polygon(100% 52%, 0 0, 0 100%);
         clip-path: polygon(100% 50%, 0% -14%, 1% 100%);
         transform: rotate(90deg);
         float: right;*/
-	}
+				&:hover{
+					-webkit-filter: grayscale(75%);
+					filter: grayscale(75%);
+				}}
 }
 .mainEvenG{
 	&__title{
 		@include boxStyles(2em, 22% );
 		position: relative;
-		top: 5em;
+		top: 4.7em;
 		left: 28%;
 	}
 	&__date{
 		@include boxStyles(1.7em, 30% );
 		position: relative;
-		top: 6em;
+		top: 5.6em;
 		left: 24%;
 	}
 }
@@ -65,7 +89,13 @@
 		left:47%;
 	}
 }
-
+@media (max-width:1207px) {
+	.mainEven{
+		&__G{
+			margin-top: -2.7em;
+		}
+	}
+}
 @media (max-width: 1489px) {
 	.mainEvenG{
 		&__title{
@@ -94,9 +124,9 @@
 @media (max-width: 1080px){
 	.mainEven{
 		&__D{
-			right: unset;
-			top:   -12em;
-			width: unset;
+			right: 0%;
+			top: 70em;
+width: 99%;
 		}
 		&__G{
 			width: 100%;
@@ -130,4 +160,104 @@
 		top: 1.2em;
 	}
 
+}
+@media (max-width:900px) {
+	.mainEven{
+		&__D{
+			top: 71.5em;
+		}
+	}
+}
+@media (max-width:800px) {
+	.mainEven{
+		&__D{
+			top: 69.5em;
+		}
+	}
+}
+@media (max-width:635px) {
+	.mainEven{
+		&__D{
+			top: 69.5em;
+		}
+	}
+	.test{
+		top:0.2em;
+	}
+}
+@media (max-width:535px) {
+	.mainEven{
+		&__D{
+			top: 71em;
+		}
+	}
+	.mainEvenD{
+		&__title{
+			left:25%;
+		}
+		&__date{
+			left: 41%;
+		}
+	}
+	.mainEvenG{
+		&__date{
+			left: 16%;
+		}
+	}
+}
+@media (max-width:500px) {
+	.mainEven{
+		&__D{
+			top: 71em;
+		}
+	}
+}
+@media (max-width:440px) {
+	.mainEven{
+		font-size: 0.8em;
+		&__D{
+			top: 85.5em;
+		}
+	}
+	.test{
+		top: -0.5em;
+	}
+}
+
+@media (max-width:430px) {
+	.mainEven{
+		&__D{
+			top: 85.5em;
+		}
+	}
+}
+
+@media (max-width:380px) {
+	.mainEven{
+		&__D{
+			top: 89em;
+		}
+	}
+}
+
+@media (max-width:350px) {
+
+	.mainEvenD{
+		&__title{
+			left: 20%;
+		}
+	}
+	.mainMusic{
+		&__title{
+			left: 16%;
+		}
+	}
+	.mainEvenG{
+		&__date{
+			left: 9%;
+		}
+		&__title{
+			left: 9%;
+		}
+	}
 }

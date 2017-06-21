@@ -4,17 +4,29 @@
 		mainMusic - components
 */
 @import "tools/mixin";
+
 .mainMusic{
 	//position: relative;
 	//top: -12em;
 
 	height: 21em;
+	margin:0;
+    padding:0;
+    overflow:hidden;
+    overflow:warp;
 	background: url(../img/ha.jpg);
 	background-size: 100%;
-	background-position: 36px -708px;
+	background-position: 2em -34em;
 
 	-webkit-clip-path: polygon(49.5% 0, 100% 62%, 0 62%);
 	clip-path: polygon(49.5% 0, 100% 62%, 0 62%);
+
+	-webkit-clip-path: url(#clipTriM);
+	clip-path: url(#clipTriM);
+	&:hover{
+		-webkit-filter: grayscale(75%);
+		filter: grayscale(75%);
+	}
 	&__title{
 		position: relative;
 		top: 4em;
@@ -26,7 +38,14 @@
 
 .test{
 	position:absolute;
-	top: 68em;
+	top: 69em;
 	width: 100%;
 	height: 1em;
+}
+@media (max-width: 1080px) {
+	.mainMusic{
+		&__title{
+			min-width: 5.6em;
+		}
+	}
 }

@@ -13,7 +13,78 @@
     font-family: 'Glyphs';
     font-size: 2em;
 }*/
+.cta{
+  color: black;
+  padding: 0.4em 0.5em;
+  background-color: #7ec9cd;
+  border: 1px solid #7ec9cd;
+    border-radius: 12px;
+    &:hover{
+      background-color: rgba(16, 15, 15, 0.8);
+      color: #7ec9cd;
+    }
+  &--bio{
+    position: relative;
+    top: 2em;
+    left: 66%;
+  }
+  &--disco{
+    margin: 1.5em 25% 1.5em 35%;
+    width: 31%;
+    font-size: 1.2em;
+    display: inline-block;
+  }
+}
+.cont{
+  &__fb:hover::before{
+    color: #3B5998;
+  }
+  &__yt:hover::before{
+    color: #E62117;
+  }
+  &__twi:hover::before{
+    color: #1DA1F2;
+   }
+  &__insta:hover::before{
+    color: #954BC4;
+   }
+}
+.cont__link{
+  color: #7ec9cd;
+}
+.cont{
+  &__fb::before{
+    content: "";
+    font-family: 'Glyphs';
+    color: white;
+    font-size: 2em;
+  }
+  &__yt::before{
+    content: "";
+    font-family: 'Glyphs';
+    color: white;
+    font-size: 2em;
 
+  }
+  &__twi::before{
+    content: "";
+    font-family: 'Glyphs';
+    color: white;
+    font-size: 2em;
+
+  }
+  &__insta::before{
+    content: "";
+    font-family: 'Glyphs';
+    color: white;
+    font-size: 2em;
+
+  }
+}
+.big{
+  font-weight: bold;
+  padding-left: 0.1em;
+}
 .yt::before {
     content: "";
       @include circle(#E62117);
@@ -48,4 +119,46 @@
 .insta:hover:before{
      background-color: #954BC4;
     color: white;
+}
+
+@media (max-width:1396px) {
+	.cta--bio{
+		top: 4em;
+	}
+}
+
+@media (max-width:1283px) {
+	.cta--bio{
+		top: 7em;
+	}
+}
+@media (max-width:1210px) {
+	.cta--bio{
+		top: 9em;
+	}
+}
+@media (max-width:956px) {
+	.cta--bio{
+    position: unset;
+    margin-top: 2em;
+    display: inline-block;
+    margin-left: 36%;
+	}
+}
+
+@media (max-width:643px) {
+	.cta--bio{
+    margin-left: 28%;
+	}
+}
+
+@media (max-width:425px) {
+	.cta--bio{
+    margin-left: 18%;
+	}
+}
+@media (max-width:345px) {
+	.cta--bio{
+    margin-left: 11%;
+	}
 }

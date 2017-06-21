@@ -12,14 +12,15 @@
 <body class="even">
 	<header class="evenHeader">
 		<nav class="menu">
+			<h1 class="hidden">Menu</h1>
 			<input type="checkbox" title="menu" class="menu__check" id="toogle-nav" checked>
-			<label for="toogle-nav" class="menu__drop"></label>
+			<label for="toogle-nav" checked="checked" class="menu__drop"></label>
 			<ul class="menu__list">
-					<li class="menu__elt"><a href="../index.html"  class="menu__link" title="">Accueil</li></a>
-					<li class="menu__elt"><a href="biographie.html" title="Lien vers la biographie de Hardwell" class="menu__link">Biographie</li></a>
-					<li class="menu__elt"><a href="discographie.html" title="Lien vers la Discographie de Hardwell" class="menu__link">Discographie</li></a>
-					<li class="menu__elt  active">Evenement</li></a>
-					<li class="menu__elt"><a href="contact.html" title="Lien vers la page de contact de Hardwell" class="menu__link">Contact</li></a>
+					<li class="menu__elt"><a href="../index.html"  class="menu__link" title="">Accueil</a></li>
+					<li class="menu__elt"><a href="biographie.html" title="Lien vers la biographie de Hardwell" class="menu__link">Biographie</a></li>
+					<li class="menu__elt"><a href="discographie.html" title="Lien vers la Discographie de Hardwell" class="menu__link">Discographie</a></li>
+					<li class="menu__elt  active">Événement</li>
+					<li class="menu__elt"><a href="contact.html" title="Lien vers la page de contact de Hardwell" class="menu__link">Contact</a></li>
 
 
 			</ul>
@@ -27,40 +28,78 @@
 	</header>
 	<main class="mainEven">
 		<div class="main">
-			<h1 role="heading" aria-level="1" class="main__title">Evenement</h1>
+			<svg height="0" width="0">
+				<defs>
+				<clipPath id="clipTriTitle" clipPathUnits="objectBoundingBox">
+					<polygon points="1 0,0.5 1,0 0">
+					</polygon>
+				</clipPath>
+			</defs>
+			</svg>
+			<h1 role="heading" aria-level="1" class="main__title">Événement</h1>
 		</div>
 		<div class="even--g">
-			<h1 role="heading" aria-level="1" class="even__title1">Pompadou</h1>
-			<h2 role="heading" aria-level="2" class="even__feat"> Dj Snake, Steve Angelo, Martin Garrix.
-			</h2>
-			<p class="even__date">Du 05 Mai au 7 Mai 2017</p>
+			<h2 role="heading" aria-level="1" class="even__title1">Pompadou</h2>
+			<h3 role="heading" aria-level="2" class="even__feat"> Dj Snake, Steve Angelo, Martin Garrix.
+			</h3>
+			<p class="even__date"> <span class="day">23</span><br><span class="month">Juin</span> <br> <span class="years">2017</span> <br><span class="hours">Dès 15h</span></p>
 			<p class="even__adr">L'addresse sera dévoilée bientôt<br>
 			</p>
 			<p class="even__price">Sur prévente uniquement</p>
 			<p class="even__num">+32 4 123 152 558</p>
 		</div>
-		<div class="even--photo-d"></div>
-		<a href="" title=""><div class="evenFormlink"><span class="posEven">Besoin d'information en plus? Demander par ici !</span></div></a>
-		<div class="even--photo-g"></div>
+		<div class="even--photo-d">
+			<svg height="0" width="0">
+				<defs>
+				<clipPath id="clipEvenD" clipPathUnits="objectBoundingBox">
+					<polygon points="1 0, 0 0.09, 0 0.7, 1 0.85">
+					</polygon>
+				</clipPath>
+			</defs>
+			</svg>
+		</div>
+		<a href="contact.html" title="">
+			<div class="evenFormlink">
+				<svg height="0" width="0">
+					<defs>
+					<clipPath id="clipForm" clipPathUnits="objectBoundingBox">
+						<polygon points="0.5 0.27, 1 0.5, 0.5 0.79, 0 0.53">
+						</polygon>
+					</clipPath>
+				</defs>
+				</svg>
+				<span class="posEven">Besoin d'information en plus? Par ici !</span>
+			</div>
+		</a>
+		<div class="even--photo-g">
+			<svg height="0" width="0">
+				<defs>
+				<clipPath id="clipEvenG" clipPathUnits="objectBoundingBox">
+					<polygon points="0 0, 0.96 0.1, 0.95 0.7, 0 0.85">
+					</polygon>
+				</clipPath>
+			</defs>
+			</svg>
+		</div>
 		<div class="even--d">
-			<h1 role="heading" aria-level="1" class="even__title1">Reverzia</h1>
-			<h2 role="heading" aria-level="2" class="even__feat"> Dj Snake, Steve Angelo, Martin Garrix.
-			</h2>
-			<p class="even__date">11 Mars 2017 - Dès 20h<br>
+			<h2 role="heading" aria-level="1" class="even__title1">Reverzia</h2>
+			<h3 role="heading" aria-level="2" class="even__feat"> Dj Snake, Steve Angelo, Martin Garrix.
+			</h3>
+			<p class="even__date"><span class="day">05</span><br> <span class="month">Mars</span><br><span class="years">2017</span><br> <span class="hours">Dès 20h</span></p>
 			<p class="even__adr">Palais 15 de Revencore - 4100 Trèsloin
 			</p>
-			<p class="even__price">Prévente : 24€ ---- Ticket : 30€</p>
+			<p class="even__price">Prévente : 24€ Ticket : 30€</p>
 			<p class="even__num">+32 4 123 152 558</p>
 		</div>
 	</main>
-	<footer class="footer even__footer">
+	<footer class="footer footer--even">
 			<ul class="footer__list">
 					<!--<a href="" title=""><li class="footer__Elt">Accueil</li></a>-->
-					<li class="footer__elt"><a href="" title="" class="footer__link fb">Facebook</li></a>
-					<li class="footer__elt"><a href="" title="" class="footer__link insta">Instagram</li></a>
-					<li class="footer__elt"><a href="" title="" class="footer__link yt">Youtube</li></a>
-					<li class="footer__elt"><a href="" title="" class="footer__link twi">Twitter</li></a>
-					<li class="footer__elt design"><a href="" title="" class="design__link">Designed by Christine Jend.</li></a>
+					<li class="footer__elt"><a href="https://www.facebook.com/djhardwell/?fref=ts" title="Lien vers la page facebook de Hardwell" class="footer__link fb hidden">Facebook</a></li>
+					<li class="footer__elt"><a href="https://www.instagram.com/hardwell/" title="Lien vers la page instagram de Hardwell" class="footer__link insta  hidden">Instagram</a></li>
+					<li class="footer__elt"><a href="https://www.youtube.com/user/robberthardwell" title="Lien vers la page youtube de Hardwell" class="footer__link yt  hidden">Youtube</a></li>
+					<li class="footer__elt"><a href="https://twitter.com/hardwell" title="Lien vers la page twitter de Hardwell" class="footer__link twi  hidden">Twitter</a></li>
+					<li class="footer__elt design"><a href="http://christinejend.be" title="Lien vers le portfolio de Christine Jend, webdesigner" class="design__link">Designed by Christine Jend.</a></li>
 			</ul>
 
 	</footer>

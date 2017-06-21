@@ -12,65 +12,81 @@
 <body class="disco">
 	<header class="discoHeader">
 		<nav class="menu">
+			<h1 class="hidden">Menu</h1>
 			<input type="checkbox" title="menu" class="menu__check" id="toogle-nav" checked>
-			<label for="toogle-nav" class="menu__drop"></label>
+			<label for="toogle-nav" checked="checked" class="menu__drop"></label>
 			<ul class="menu__list">
-					<li class="menu__elt"><a href="../index.html"  class="menu__link" title="">Accueil</li></a>
-					<li class="menu__elt"><a href="biographie.html" title="Lien vers la biographie de Hardwell" class="menu__link">Biographie</li></a>
-					<li class="menu__elt  active">Discographie</li></a>
-					<li class="menu__elt"><a href="evenement.html" title="Lien vers la evenement de Hardwell" class="menu__link">Evenement</li></a>
-					<li class="menu__elt"><a href="contact.html" title="Lien vers la page de contact de Hardwell" class="menu__link">Contact</li></a>
-
-
+					<li class="menu__elt"><a href="../index.html"  class="menu__link" title="">Accueil</a></li>
+					<li class="menu__elt"><a href="biographie.html" title="Lien vers la biographie de Hardwell" class="menu__link">Biographie</a></li>
+					<li class="menu__elt  active">Discographie</li>
+					<li class="menu__elt"><a href="evenement.html" title="Lien vers la evenement de Hardwell" class="menu__link">Événement</a></li>
+					<li class="menu__elt"><a href="contact.html" title="Lien vers la page de contact de Hardwell" class="menu__link">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main class="mainDisco">
 		<div class="main">
+			<svg height="0" width="0">
+				<defs>
+				<clipPath id="clipTriTitle" clipPathUnits="objectBoundingBox">
+					<polygon points="1 0,0.5 1,0 0">
+					</polygon>
+				</clipPath>
+			</defs>
+			</svg>
 			<h1 role="heading" aria-level="1" class="main__title">Discographie</h1>
 		</div>
 		<div class="mainDisco__video ">
-			<iframe width="800" height="500" src="https://www.youtube.com/embed/MNtScUEs8A4?list=RDMNtScUEs8A4" frameborder="0" allowfullscreen class="mainDisco__player superembed-force"></iframe>
+			<div class="h_iframe">
+			 <img class="ratio" src="http://placehold.it/16x9" alt=""/>
+			<iframe src="https://www.youtube.com/embed/MNtScUEs8A4?list=RDMNtScUEs8A4" frameborder="0" allowfullscreen class="mainDisco__player superembed-force"></iframe>
+		</div>
 		</div>
 			<div class="mainDisco__single">      <!-- SINGLE-->
-				<h3 role="heading" class="single__title" aria-level="3"><span class="single__title-posi">Single</span></h3>
+				<svg height="0" width="0">
+					<defs>
+					<clipPath id="clipTriDio" clipPathUnits="objectBoundingBox">
+						<polygon points="0.15 0.52,0 0,0 1">
+						</polygon>
+					</clipPath>
+				</defs>
+				</svg>
+				<h2 role="heading" class="single__title" aria-level="3"><span class="single__title-posi">Single</span></h2>
 				<ul class="single__list">
-					<a href="www.google.be" title="" class="single__link">
-						<li class="single__elt"><img class="single__poch" src="../img/rehab.jpg" alt="" title="Mrkrstft (Hardwell Presents R3HAB)" width="170" height="170"></li>
-					</a>
-					<li class="single__elt"><img class="single__poch" src="../img/twoloud.jpg" alt="" title="Zero 76(avec Tiësto)" width="170" height="170"></li>
-					<li class="single__elt"><img class="single__poch" src="../img/cobrajpg.jpg" alt="" title="Cobra" width="170" height="170"></li>
-					<li class="single__elt"><img class="single__poch" src="../img/spaceman.jpg" alt="" title="Call Me A Spaceman (avec Mitch Crown)" width="170" height="170"></li>
-					<li class="single__elt"><img class="single__poch" src="../img/how.jpg" alt="" title="How We Do (avec Showtek)" width="170" height="170"></li>
-					<li class="single__elt"><img class="single__poch" src="../img/apollo.jpg7.jpg" alt="" title="Apollo (avec Amba Shepherd)" width="170" height="170"></li>
-					<li class="single__elt"><img class="single__poch" src="../img/nerversay.jpg" alt="" title="Never Say Goodbye (avec Dyro & Bright Lights) " width="170" height="170"></li>
-					<li class="single__elt"><img class="single__poch" src="../img/jumper.jpg" alt="" title="Jumper(avec W&W) " width="170" height="170"></li>
-					<li class="single__elt"><img class="single__poch" src="../img/count.jpg" alt="" title="Countdown (avec MAKJ)" width="170" height="170"></li>
-					<li class="single__elt"><img class="single__poch" src="../img/dareyou.jpg" alt="" title="Dare You (avec Matthew Koma)" width="170" height="170"></li>
-					<li class="single__elt"><img class="single__poch" src="../img/every.jpg" alt="" title="Everybody Is In The Place" width="170" height="170"></li>
-					<li class="single__elt"><img class="single__poch" src="../img/arcadia.jpg" alt="" title="Arcadia(avec Joey Dale et Luciana)" width="170" height="170"></li>
-					<li class="single__elt"><img class="single__poch" src="../img/again.jpg" alt="" title="Young Again (avec Chris Jones)" width="170" height="170"></li>
-					<li class="single__elt"><img class="single__poch" src="../img/dontstopmadness.jpg" alt="" title="Don't Stop The Madness (avec W&W featuring Fatman Scoop)" width="170" height="170"></li>
-					<li class="single__elt"><img class="single__poch" src="../img/eclipse.jpg" alt="" title="Eclipse" width="170" height="170"></li>
-					<li class="single__elt"><img class="single__poch" src="../img/sally.jpg" alt="" title="Sally (featuring Harrison)" width="170" height="170"></li>
-					<li class="single__elt"><img class="single__poch" src="../img/echo.jpg" alt="" title="Echo (featuring Jonathan Mendelsohn)" width="170" height="170"></li>
-					<li class="single__elt"><img class="single__poch" src="../img/follow.jpg" alt="" title=" Follow Me (featuring Jason Derulo)" width="170" height="170"></li>
-					<li class="single__elt"><img class="single__poch" src="../img/cha.jpg" alt="" title="Chameleon (avec Wiwek)" width="170" height="170"></li>
-					<li class="single__elt"><img class="single__poch" src="../img/surv.jpg" alt="" title="Survivors (avec Dannic)" width="170" height="170"></li>
-					<li class="single__elt"><img class="single__poch" src="../img/offthehook.jpg" alt="" title="Off The Hook (avec Armin van Buuren)" width="170" height="170"></li>
-					<li class="single__elt"><img class="single__poch" src="../img/mad.jpg" alt="" title="Mad World (featuring Jake Reese)" width="170" height="170"></li>
+					<li class="single__elt"><img class="single__poch" src="../img/rehab.jpg" alt="Mrkrstft (Hardwell Presents R3HAB)" width="170" height="170"></li>
+					<li class="single__elt"><img class="single__poch" src="../img/twoloud.jpg" alt="Zero 76(avec Tiësto)" width="170" height="170"></li>
+					<li class="single__elt"><img class="single__poch" src="../img/cobrajpg.jpg" alt="Cobra" width="170" height="170"></li>
+					<li class="single__elt"><img class="single__poch" src="../img/spaceman.jpg" alt="Call Me A Spaceman (avec Mitch Crown)" width="170" height="170"></li>
+					<li class="single__elt"><img class="single__poch" src="../img/how.jpg" alt="How We Do (avec Showtek)" width="170" height="170"></li>
+					<li class="single__elt"><img class="single__poch" src="../img/apollo.jpg7.jpg" alt="Apollo (avec Amba Shepherd)" width="170" height="170"></li>
+					<li class="single__elt"><img class="single__poch" src="../img/nerversay.jpg" alt="Never Say Goodbye (avec Dyro & Bright Lights) " width="170" height="170"></li>
+					<li class="single__elt"><img class="single__poch" src="../img/jumper.jpg" alt="Jumper(avec W&W) " width="170" height="170"></li>
+					<li class="single__elt"><img class="single__poch" src="../img/count.jpg" alt="Countdown (avec MAKJ)" width="170" height="170"></li>
+					<li class="single__elt"><img class="single__poch" src="../img/dareyou.jpg" alt="Dare You (avec Matthew Koma)" width="170" height="170"></li>
+						<a href="evenement.html" class="cta cta--disco">Envie de le voir en live?</a>
+					<li class="single__elt"><img class="single__poch" src="../img/every.jpg" alt="Everybody Is In The Place" width="170" height="170"></li>
+					<li class="single__elt"><img class="single__poch" src="../img/arcadia.jpg" alt="Arcadia(avec Joey Dale et Luciana)" width="170" height="170"></li>
+					<li class="single__elt"><img class="single__poch" src="../img/again.jpg" alt="Young Again (avec Chris Jones)" width="170" height="170"></li>
+					<li class="single__elt"><img class="single__poch" src="../img/dontstopmadness.jpg" alt="Don't Stop The Madness (avec W&W featuring Fatman Scoop)" width="170" height="170"></li>
+					<li class="single__elt"><img class="single__poch" src="../img/eclipse.jpg" alt="Eclipse" width="170" height="170"></li>
+					<li class="single__elt"><img class="single__poch" src="../img/sally.jpg" alt="Sally (featuring Harrison)" width="170" height="170"></li>
+					<li class="single__elt"><img class="single__poch" src="../img/echo.jpg" alt="Echo (featuring Jonathan Mendelsohn)" width="170" height="170"></li>
+					<li class="single__elt"><img class="single__poch" src="../img/follow.jpg" alt=" Follow Me (featuring Jason Derulo)" width="170" height="170"></li>
+					<li class="single__elt"><img class="single__poch" src="../img/cha.jpg" alt="Chameleon (avec Wiwek)" width="170" height="170"></li>
+					<li class="single__elt"><img class="single__poch" src="../img/surv.jpg" alt="Survivors (avec Dannic)" width="170" height="170"></li>
+					<li class="single__elt"><img class="single__poch" src="../img/offthehook.jpg" alt="Off The Hook (avec Armin van Buuren)" width="170" height="170"></li>
+					<li class="single__elt"><img class="single__poch" src="../img/mad.jpg" alt="Mad World (featuring Jake Reese)" width="170" height="170"></li>
 				</ul>
 			</div>
 	</main>
 	<footer class="footer">
 			<ul class="footer__list">
-					<!--<a href="" title=""><li class="footer__Elt">Accueil</li></a>-->
-					<li class="footer__elt"><a href="" title="" class="footer__link fb">Facebook</li></a>
-					<li class="footer__elt"><a href="" title="" class="footer__link insta">Instagram</li></a>
-					<li class="footer__elt"><a href="" title="" class="footer__link yt">Youtube</li></a>
-					<li class="footer__elt"><a href="" title="" class="footer__link twi">Twitter</li></a>
-					<li class="footer__elt design"><a href="" title="" class="design__link">Designed by Christine Jend.</li></a>
-			</ul>
+					<!--<a href="" alt=""><li class="footer__Elt">Accueil</li></a>-->
+					<li class="footer__elt"><a href="https://www.facebook.com/djhardwell/?fref=ts" title="Lien vers la page facebook de Hardwell" class="footer__link fb hidden">Facebook</a></li>
+					<li class="footer__elt"><a href="https://www.instagram.com/hardwell/" title="Lien vers la page instagram de Hardwell" class="footer__link insta hidden">Instagram</a></li>
+					<li class="footer__elt"><a href="https://www.youtube.com/user/robberthardwell" title="Lien vers la page youtube de Hardwell" class="footer__link yt hidden">Youtube</a></li>
+					<li class="footer__elt"><a href="https://twitter.com/hardwell" title="Lien vers la page twitter de Hardwell" class="footer__link twi hidden">Twitter</a></li>
+					<li class="footer__elt design"><a href="http://christinejend.be" title="Lien vers le portfolio de Christine Jend, webdesigner" class="design__link">Designed by Christine Jend.</a></li>
 
 	</footer>
 	<script type="text/javascript" src="../js/script.js"></script>

@@ -6,7 +6,7 @@
 		color: black;
 		font-size: 1.5em;
 		 -webkit-clip-path: polygon(98% 52%, 0 0, 0 100%);
-    	clip-path: polygon(16% 50%, 0% 0%, 0% 100%);
+    	clip-path: url(#clipTriDio);
     	background-color: #7EC9CD;
     	height: 11em;
 	}
@@ -16,7 +16,7 @@
 		left: 3%;
 	}
 	&__list{
-		width: 60%;
+		width: 58%;
 		margin: 2em auto;
 		padding-bottom: 3em;
 	}
@@ -28,11 +28,63 @@
 	}
 }
 
+@media (max-width:1495px) {
+	.cta--disco{
+		margin-left: 24%;
+	}
+}
 
 @media (max-width:1080px) {
 	.single{
 		&__list{
 			width: 66%;
+		}
+	}
+}
+@media (max-width:895px) {
+	.single{
+		&__title{
+			//width: 27em;
+		}
+	}
+}
+
+@media (max-width:748px) {
+	.single{
+		&__list{
+			width: 53%;
+		}
+	}
+}
+
+@media (max-width:660px) {
+	.single{
+		&__list{
+			width: 56%;
+		}
+
+	}
+}
+@media (max-width:610px) {
+	.single{
+		&__list{
+			width: 63%;
+		}
+
+	}
+}
+@media (max-width:595px) {
+	.single{
+		&__title{
+			//width: 25em;
+		}
+	}
+}
+
+@media (max-width:545px) {
+	.single{
+		&__list{
+			width: 30%;//63%;
 		}
 	}
 }

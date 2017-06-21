@@ -12,48 +12,79 @@
 <body class="cont">
 	<header class="contHeader">
 		<nav class="menu">
+			<h1 class="hidden">Menu</h1>
 			<input type="checkbox" title="menu" class="menu__check" id="toogle-nav" checked>
-			<label for="toogle-nav" class="menu__drop"></label>
+			<label for="toogle-nav" checked="checked" class="menu__drop"></label>
 			<ul class="menu__list">
-					<li class="menu__elt"><a href="../index.html"  class="menu__link" title="">Accueil</li></a>
-					<li class="menu__elt"><a href="biographie.html" title="Lien vers la biographie de Hardwell" class="menu__link">Biographie</li></a>
-					<li class="menu__elt"><a href="discographie.html" title="Lien vers la Discographie de Hardwell" class="menu__link">Discographie</li></a>
-					<li class="menu__elt"><a href="evenement.html" title="Lien vers la page évenement de Hardwell" class="menu__link">Evenement</li></a>
-					<li class="menu__elt   active" >Contact</li></a>
+					<li class="menu__elt"><a href="../index.html"  class="menu__link" title="">Accueil</a></li>
+					<li class="menu__elt"><a href="biographie.html" title="Lien vers la biographie de Hardwell" class="menu__link">Biographie</a></li>
+					<li class="menu__elt"><a href="discographie.html" title="Lien vers la Discographie de Hardwell" class="menu__link">Discographie</a></li>
+					<li class="menu__elt"><a href="evenement.html" title="Lien vers la page évenement de Hardwell" class="menu__link">Événement</a></li>
+					<li class="menu__elt   active">Contact</li>
 			</ul>
 		</nav>
 	</header>
 	<main class="mainContact">
 		<div class="main">
-			<h1 role="heading" aria-level="1" class="main__title">Contact</h1>
+			<svg height="0" width="0">
+				<defs>
+				<clipPath id="clipTriTitle" clipPathUnits="objectBoundingBox">
+					<polygon points="1 0,0.5 1,0 0">
+					</polygon>
+				</clipPath>
+			</defs>
+			</svg>
+			<h1 role="heading" aria-level="1" class="main__title main__tLittle">Contact</h1>
 		</div>
     <div class="cont__intro">
-        <p class="cont__text">Besoin d'information en plus? Ou simplement l'envie de nous laisser un petit mot, profitez-en !</p>
-        <form class="cont__form" action="index.html" method="post">
+			<p class="cont__text">Besoin d'information en plus? Ou simplement l'envie de nous laisser un petit mot, n'hésitez pas&nbsp;!<br>
+			</p>
+				<form class="cont__form" action="index.html" method="post">
+					<h2 class="hidden">Formulaire</h2>
 					<fieldset class="cont__design">
-            <label class="cont__lab cont__name" for="name">Nom</label><input class="cont__bar" type="text" name="name">
+            <label class="cont__lab cont__name" for="name">Nom</label><input class="cont__bar" type="text" id="name" name="name">
 					</fieldset>
 					<fieldset class="cont__design">
-						<label class="cont__lab cont__first" for="firstname">Prénom</label><input class="cont__bar" type="text" name="firstame" >
+						<label class="cont__lab cont__first" for="firstname">Prénom</label><input class="cont__bar" type="text" id="firstname" name="firstame" >
 					</fieldset>
 					<fieldset class="cont__design">
-						<label class="cont__lab cont__email" for="email">Email</label><input class="cont__bar" type="email" name="email">
+						<label class="cont__lab cont__email" for="email">Email</label><input class="cont__bar" type="email" id="email" name="email">
 					</fieldset>
 					<fieldset class="cont__design">
-						<label class="cont__lab cont__msg" for="msg">Message</label><textarea class="cont__bar" type="area" name="msg" value="" height="100"></textarea>
+						<label class="cont__lab cont__msg" for="msg">Message</label><textarea class="cont__bar" type="area" id="msg" name="msg" rows="9" cols="45"></textarea>
 					</fieldset>
 						<input type="submit" class="cont__btn" name="" value="Envoyer">
         </form>
     </div>
+		<div class="cont__more">
+			<ul class="cont__list">
+				<li class="cont__elt hidden"><a href="https://www.facebook.com/djhardwell/?fref=ts" title="Lien vers la page facebook de Hardwell" class="cont__link cont__fb">Facebook</a></li>
+				<li class="cont__elt hidden"><a href="https://www.instagram.com/hardwell/" title="Lien vers la page instagram de Hardwell" class="cont__link cont__insta">Instagram</a></li>
+				<li class="cont__elt hidden"><a href="https://www.youtube.com/user/robberthardwell" title="Lien vers la page youtube de Hardwell" class="cont__link cont__yt">Youtube</a></li>
+				<li class="cont__elt hidden"><a href="https://twitter.com/hardwell" title="Lien vers la page twitter de Hardwell" class="cont__link cont__twi">Twitter</a></li>
+			</ul>
+			<p class="cont__manager"> <span class="sTitle">Label manager </span><br> Mattijs van Welzenis <br>
+mattijs@revealedrecordings.com <br> <a href="http://www.revealedrecordings.com" class="cont__a">Revealed Records</a></p>
+			<div class="cont__img">
+				<svg height="0" width="0">
+					<defs>
+					<clipPath id="clipCont" clipPathUnits="objectBoundingBox">
+						<polygon points="1 0,0 0.09,0 0.7, 1 0.85">
+						</polygon>
+					</clipPath>
+				</defs>
+				</svg>
+			</div>
+		</div>
 	</main>
 	<footer class="footer">
 			<ul class="footer__list">
 					<!--<a href="" title=""><li class="footer__Elt">Accueil</li></a>-->
-					<li class="footer__elt"><a href="" title="" class="footer__link fb">Facebook</li></a>
-					<li class="footer__elt"><a href="" title="" class="footer__link insta">Instagram</li></a>
-					<li class="footer__elt"><a href="" title="" class="footer__link yt">Youtube</li></a>
-					<li class="footer__elt"><a href="" title="" class="footer__link twi">Twitter</li></a>
-					<li class="footer__elt design"><a href="" title="" class="design__link">Designed by Christine Jend.</li></a>
+					<li class="footer__elt"><a href="https://www.facebook.com/djhardwell/?fref=ts" title="Lien vers la page facebook de Hardwell" class="footer__link fb hidden">Facebook</a></li>
+					<li class="footer__elt"><a href="https://www.instagram.com/hardwell/" title="Lien vers la page instagram de Hardwell" class="footer__link insta hidden">Instagram</a></li>
+					<li class="footer__elt"><a href="https://www.youtube.com/user/robberthardwell" title="Lien vers la page youtube de Hardwell" class="footer__link yt hidden">Youtube</a></li>
+					<li class="footer__elt"><a href="https://twitter.com/hardwell" title="Lien vers la page twitter de Hardwell" class="footer__link twi hidden">Twitter</a></li>
+					<li class="footer__elt design"><a href="http://christinejend.be" title="Lien vers le portfolio de Christine Jend, webdesigner" class="design__link">Designed by Christine Jend.</a></li>
 			</ul>
 
 	</footer>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Description" author="Christine Jendrzejczyk">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<title>Accueil</title>
+</head>
+<body>
+<span>
+	<nav>
+		<h1> Bienvenu ! Chez Christine Jendrzejczyk </h1>
+		<!--<a href="http://christinejend.be/" class="firstLink" title="Lien vers le portfolio">Portfolio</a>	-->
+		<ul class="list">
+			<!--<li><a href="http://hepl01.cblue.be/~user20/dw/projet-baobab/decoupe/dev/" title="Lien vers Baobab2">Baobab </li></a>
+			<li><a href="http://hepl01.cblue.be/~user20/dw/artiste" title="">L'artiste</a></li>
+
+			<li><a href="http://hepl01.cblue.be/~user20/dw/biblio" title="">Bibliotheque</a></li>
+			<li><a href="http://hepl01.cblue.be/~user20/dw/pendu" title="">Jeu du pendu</a></li>
+			<li><a href="http://hepl01.cblue.be/~user20/dw/snake" title="">Snake</a></li>
+			<li>Design appli train : <a href="http://hepl01.cblue.be/~user20/dw/designAndroid-Train.pdf" title=""> Ios</a>  -  <a href="http://hepl01.cblue.be/~user20/dw/designIos-Train.pdf" title="">  Android</a></li>
+-->
+<li><a href="http://hepl01.cblue.be/~user20/dw/cv" title="Lien vers le cv">Mon cv</li></a>
+<li><a href="http://hepl01.cblue.be/~user20/dw/zen" title="">Css Zen garden</a></li>
+<li><a href="http://hepl01.cblue.be/~user20/dw/artiste" title="">Artiste</a></li>
+<li><a href="http://hepl01.cblue.be/~user20/dw/mariam" title="">Mariam Faso</a></li>
+
+		</ul>
+	</nav>
+</span>
+</body>
+</html>

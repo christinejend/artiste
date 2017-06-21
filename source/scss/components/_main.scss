@@ -5,8 +5,10 @@
 */
 
 .mainHeader{
-	background: url(../img/710193.jpg) no-repeat center;
+		background-image: url('../img/ha.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
     min-height: 41em;
-    background-size:74em;
+    background-size:cover;
 
 }

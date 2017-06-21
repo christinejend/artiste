@@ -9,71 +9,91 @@
     <link rel="stylesheet" href="buildcss/main.css" />
 	<title>Hardwell</title>
 </head>
-<body class="accueil">
-	<header class="mainHeader">
+<body class="accueil" onload="hdImg();">
+	<header class="mainHeader" >
 		<nav class="menu">
-			<input type="checkbox" title="menu" class="menu__check" id="toogle-nav" checked>
-			<label for="toogle-nav" class="menu__drop"></label>
+			<h1 class="hidden">Menu</h1>
+			<input type="checkbox"  title="menu" class="menu__check" id="toogle-nav" >
+			<label for="toogle-nav" checked="checked" class="menu__drop"></label>
 			<ul class="menu__list">
 					<!--<a href="" title=""><li class="menu__Elt">Accueil</li></a>-->
-					<li class="menu__elt"><a href="html/biographie.html" title="Lien vers la biographie de Hardwell" class="menu__link">Biographie</li></a>
-					<li class="menu__elt"><a href="html/discographie.html" title="Lien vers la discographie de Hardwell" class="menu__link">Discographie</li></a>
-					<li class="menu__elt"><a href="html/evenement.html" title="Lien vers la evenement de Hardwell" class="menu__link">Evenement</li></a>
-					<li class="menu__elt"><a href="html/contact.html" title="Lien vers la page de contact de Hardwell" class="menu__link">Contact</li></a>
-
-
+					<li class="menu__elt"><a href="html/biographie.html" title="Lien vers la biographie de Hardwell" class="menu__link">Biographie</a></li>
+					<li class="menu__elt"><a href="html/discographie.html" title="Lien vers la discographie de Hardwell" class="menu__link">Discographie</a></li>
+					<li class="menu__elt"><a href="html/evenement.html" title="Lien vers la evenement de Hardwell" class="menu__link">Événement</a></li>
+					<li class="menu__elt"><a href="html/contact.html" title="Lien vers la page de contact de Hardwell" class="menu__link">Contact</a></li>
 			</ul>
 		</nav>
 		<div class="mainQuote">
-			<h1 role="heading" aria-level="1" class="mainQuote__title">If you can do it, you can do it</h1>
+			<h2 role="heading" aria-level="1" class="mainQuote__title">If you can dream it, you can do it</h2>
 		</div>
 	</header>
 	<main class="mainHome">
 		<div class="mainInfo">
-			<h1 role="heading" aria-level="1" class="hidden">Biographie</h1>
+			<h1 role="heading" aria-level="1" class="mainInfo__title">Hardwell</h1>
 			<p>
-				Hardwell, de son vrai nom Robbert van de Corput, né le 7 janvier 1988 à Bréda, est un disc jockey et producteur de musique house et électronique néerlandais.
+				De son vrai nom Robbert van de Corput, né le 7 janvier 1988 à Bréda, est un disc jockey et producteur de musique house et électronique néerlandais.
 				<a href="html/biographie.html" title="Lien vers la page biographie d'Hardwell" class="mainInfo__plus">En lire plus</a>
 			</p>
 		</div>
 		<div class="mainEven">
-		<h1 role="heading" aria-level="1" class="hidden">Evenemement à venir</h1>
+			<h2 role="heading" aria-level="1" class="hidden">Evenemement à venir</h2>
+			<a href="html/evenement.html" title="Lien vers l'évenement">
 			<div class="mainEven__G">
-				<a href="" title="Lien vers l'évenement">
-				<h2 role="heading" aria-level="1" class="mainEvenG__title">Reverzia</h2>
-				<p class="mainEvenG__date">11 Mars 2017</p>
+				<svg height="0" width="0">
+					<defs>
+					<clipPath id="clipTriG" clipPathUnits="objectBoundingBox">
+						<polygon points="0.98 0.52,0 0,0 1">
+						</polygon>
+					</clipPath>
+				</defs>
+				</svg>
+					<h3 role="heading" aria-level="1" class="mainEvenG__title">Reverzia</h3>
+					<p class="mainEvenG__date">11 Mars 2017</p>
+					<!--<img src="../img/il.jpg" alt="" title="" width="" height="">-->
+					</div>
 				</a>
-				<!--<img src="../img/il.jpg" alt="" title="" width="" height="">-->
-			</div>
-
-
-			<div class="mainEven__D">
-				<a href="" title="Lien vers l'évenement">
-				<h2 role="heading" aria-level="1" class="mainEvenD__title">Pompadou Festival</h2>
-				<p class="mainEvenD__date"> 18 Mai 2017</p>
+				<a href="html/evenement.html" title="Lien vers l'évenement">
+					<div class="mainEven__D">
+						<svg height="0" width="0">
+							<defs>
+							<clipPath id="clipTriD" clipPathUnits="objectBoundingBox">
+								<polygon points="0 0.54,1 0,0.99 1">
+								</polygon>
+							</clipPath>
+						</defs>
+						</svg>
+					<h3 role="heading" aria-level="1" class="mainEvenD__title">Pompadou Festival</h3>
+					<p class="mainEvenD__date"> 18 Mai 2017</p>
+					<!--<img src="../img/il.jpg" alt="" title="" width="" height="">-->
+					</div>
 				</a>
-				<!--<img src="../img/il.jpg" alt="" title="" width="" height="">-->
 			</div>
-
+			<div class="test">
+			<div class="mainMusic">
+				<a href="html/discographie.html">
+					<svg height="0" width="0">
+						<defs>
+						<clipPath id="clipTriM" clipPathUnits="objectBoundingBox">
+							<polygon points="0.495 0,1 0.62,0 0.62">
+							</polygon>
+						</clipPath>
+					</defs>
+					</svg>
+					<h3 role="heading" aria-level="1" class="mainMusic__title">Tous les Set</h3>
+					<!--<img src="../img/il.jpg" alt="" title="" width="" height="">-->
+				</a>
+			</div>
 		</div>
-		<span class="test">
-		<div class="mainMusic">
-			<h1 role="heading" aria-level="1" class="mainMusic__title">Tous les Set</h1>
-				<!--<img src="../img/il.jpg" alt="" title="" width="" height="">-->
-		</div>
-		</span>
 	</main>
-	<footer class="footer">
+	<footer class="footer footer__home">
 			<ul class="footer__list footer__accueil">
-					<!--<a href="" title=""><li class="footer__Elt">Accueil</li></a>-->
-					<li class="footer__elt"><a href="" title="" class=" footer__link fb">Facebook</li></a>
-					<li class="footer__elt"><a href="" title="" class="footer__link insta">Instagram</li></a>
-					<li class="footer__elt"><a href="" title="" class="footer__link yt">Youtube</li></a>
-					<li class="footer__elt"><a href="" title="" class="footer__link twi">Twitter</li></a>
-					<li class="footer__elt design"><a href="" title="" class="design__link">Designed by Christine Jend.</li></a>
-			</ul>
+				<li class="footer__elt"><a href="https://www.facebook.com/djhardwell/?fref=ts" title="Lien vers la page facebook de Hardwell" class="footer__link fb hidden">Facebook</a></li>
+				<li class="footer__elt"><a href="https://www.instagram.com/hardwell/" title="Lien vers la page instagram de Hardwell" class="footer__link insta hidden">Instagram</a></li>
+				<li class="footer__elt"><a href="https://www.youtube.com/user/robberthardwell" title="Lien vers la page youtube de Hardwell" class="footer__link yt hidden">Youtube</a></li>
+				<li class="footer__elt"><a href="https://twitter.com/hardwell" title="Lien vers la page twitter de Hardwell" class="footer__link twi hidden">Twitter</a></li>
+				<li class="footer__elt design"><a href="http://christinejend.be" title="Lien vers le portfolio de Christine Jend, webdesigner" class="design__link">Designed by Christine Jend.</a></li>
+		</ul>
 	</footer>
 </body>
-<script type="text/javascript" src="../js/script.js"></script>
-<script src="../js/superembed.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 </html>

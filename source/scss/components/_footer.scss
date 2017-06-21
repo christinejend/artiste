@@ -4,19 +4,27 @@
 		footer - components
 */
 .footer{
+	&--even{
+		margin-top: 34em;
+	}
+	    padding-bottom: 1.5em;
 	background-color: rgba(0,0,0,0.45);
 	font-size: 0.9em;
 	&__list{
-	margin-left: 23%;
+	margin-left: 25%;
 	margin-top: 1em;
-	padding: 2em;
+	padding-top: 2.5em;
+	padding-bottom: .5em;
 	}
+
 	&__elt{
 		display: inline-block;
 		padding: 0.5em;
+
 	}
 	&__link{
-		color: transparent;
+		//color: transparent;
+		margin-right: 5%;
 
 	}
 }
@@ -26,9 +34,70 @@
 		color: lightgray;
 	}
 }
+@media (max-width:1317px) {
+	.footer{
+		&__elt{
+			margin-top: 3.5em;
+		}
+		&__list{
+			padding-top: unset;
+		}
+	}
+}
+@media (max-width:1312px) {
+	.footer{
+		&__list{
+			padding-top: .5em;
+		}
+	}
+}
+@media (max-width:1072px) {
+	.footer{
+		&__bio{
+			margin-top: -20em;
+		}
+	}
+}
+
 @media (max-width: 1080px){
 	.footer__list{
-		margin-left: 12%;
-		margin-top: 2em;
+		margin-left: 21%;
+		margin-top: 24em;
+	}
+}
+
+@media (max-width:865px) {
+	.footer--even{
+		margin-top: 42em;
+	}
+}
+@media (max-width: 855px){
+	.footer__list{
+		margin-left: 15%;
+	}
+}
+@media (max-width: 700px){
+	.footer__list{
+		margin-left: 8%;
+	}
+}
+@media (max-width: 665px){
+	.footer__link{
+		margin-right: 4%;
+	}
+}
+@media (max-width: 548px){
+	.footer__list{
+		margin-left: 4%;
+	}
+}
+@media (max-width: 518px){
+	.footer__elt{
+		margin-top: 3.5em;
+	}
+}
+@media (max-width: 360px){
+	.footer__list{
+		margin-left: 14%;
 	}
 }

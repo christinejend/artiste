@@ -1,31 +1,99 @@
+.sTitle{
+  border-bottom: 2px solid white;
+  font-size: 1.1em;
+}
 .cont{
+  &__more{
+    float: right;
+margin-top: -34em;
+margin-right: 18%;
+  }
+  &__fb{
+    margin-left: 63%;
+  }
+  &__elt{
+    margin-bottom: 0.5em;
+  }
+  &__list{
+    //display: flex;
+    //margin-bottom: 2em;
+    position: relative;
+    top: -0.5em;
+    right: -1%;
+    width: 5%;
+  }
+  &__manager{
+    margin-top: -15.7em;
+    margin-left: 40%;
+    margin-bottom: 2em;
+  }
+  &__img{
+    z-index: 1;
+		height: 20em;
+		width: 196%;
+    margin-top: 1.5em;
+    margin-left: -3%;
+	    background: url(../img/night.jpg);
+	   // background-size: 70%;
+	    background-position:-5em 17em;
+		-webkit-clip-path: polygon(100% 0%, 0% 9%, 0% 70%, 100% 85%);
+        clip-path: url(#clipCont);
+  }
+  &__link{
+    flex:1;
+    margin-right: 17%;
+  }
+  &__a{
+    margin-left: 6%;
+    color: white;
+    margin-top: 1.5em;
+    width: 120%;
+    display: inline-block;
+  }
+  &__a:before{
+    content:url('../img/records.jpg'); /* with class ModalCarrot ??*/
+    position:relative; /*or absolute*/
+    z-index:100000; /*a number that's more than the modal box*/
+    left:-17px;
+    top:16px;
+
+  }/*
+  &__rec{
+    padding-top: 0.5em;
+    padding-left: 3%;
+  }*/
   &__design{
       border-bottom: 2px solid #7EC9CD;
       width: auto;
     }
   &__text{
-    text-align: center;
-    margin: 2em 0;
+    width: 38%;
+margin-left: 13%;
+margin: 2em 10em;
+font-size: 1.1em;
   }
   &__bar{
     //border:1px solid #d1c7ac;
-  	width: 65%;
+  	//width: 65%;
   	color: #7EC9CD;
   	padding:3px;
     font-size: 0.9em;
-    height: 2.7em;
+  //  height: 2.7em;
     background-color: unset;
     border: unset;
     //margin-bottom: -0.5em;
 
   }
-  &__bar::target{
+  &__bar:target{
     border: unset;
   }
 
   &__form{
-  width: 25%;
-  margin: 0 auto;
+    width: 34%;
+    font-size: 1.1em;
+    /* margin: 0 auto; */
+    margin-left: 15%;
+
   }
    &__lab{
   display: inline-block;
@@ -39,14 +107,18 @@
   }
   &__btn{
 
-      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#36474e+0,7ec9cd+100 */
-  background: #36474e; /* Old browsers */
-  background: -moz-linear-gradient(top, #36474e 0%, #7ec9cd 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #36474e 0%,#7ec9cd 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #36474e 0%,#7ec9cd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36474e', endColorstr='#7ec9cd',GradientType=0 ); /* IE6-9 */
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3c7674+0,7ec9cd+100 */
+  background: #3c7674; /* Old browsers */
+  background: -moz-linear-gradient(top, #3c7674 0%, #7ec9cd 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #3c7674 0%,#7ec9cd 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #3c7674 0%,#7ec9cd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c7674', endColorstr='#7ec9cd',GradientType=0 ); /* IE6-9 */
+
      color: black;
+     font-family: 'Titillium Web', 'Dosis', serif;
      border: none;
+     font-size: 0.8em;
+     font-weight: bold;
      padding: 0.7em 1em;
      display: inherit;
      margin: 2.5em 0 2.5em 40%;
@@ -56,10 +128,14 @@
     border: none;
   }
   &__btn:hover{
-    background: none;
-    transition: 0.2s ease-in;
-    background-color: #283949;
-    color: #7EC9CD;
+  transition: 0.5s ease-in;
+    background: #3c7674; /* Old browsers */
+    background: -moz-linear-gradient(top, #7ec9cd 0%,  #3c7674 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #7ec9cd 0%,  #3c7674 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #7ec9cd 0%,  #3c7674 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ec9cd', endColorstr=' #3c7674',GradientType=0 ); /* IE6-9 */
+
+  //  color: #7EC9CD;
   }
   &__labDeco{
 
@@ -73,6 +149,132 @@
   &__msg{
     vertical-align: middle;
   }
+}
+@media (max-width:1145px) {
+  .cont{
+    &__text{
+      margin-left: 15%;
+    }
+    &__img{
+      width: 145%;
+      margin-left: 17%;
+    }
+  }
+}
 
-
+@media (max-width:1023px) {
+    .cont{
+      &__list{
+        right: -21%;
+      }
+      &__manager{
+        margin-left: 51%;
+      }
+      &__a{
+        width: 88%;
+      }
+      &__text{
+        width: 60%;
+        margin-left: 20%;
+      }
+    }
+}
+@media (max-width:895px) {
+  .cont{
+    &__more{
+      float: unset;
+      margin: unset;
+    }
+    &__form{
+      width: 55%;
+      margin: 0 auto;
+    }
+    &__list{
+      position: unset;
+      margin-left: 8%;
+    }
+    &__manager{
+      margin-left: 22%;
+      margin-top: -14.7em;
+    }
+    &__a{
+      margin-left: 3%;
+    }
+    &__img{
+    /*  width: 55%;
+      margin-left: 60%;
+      margin-top: -13em;*/
+      width: 16em;
+      margin-left: 62.5%;
+      margin-top: -13em;
+      background-position: -10em 17em;
+    }
+  }
+}
+@media (max-width:700px) {
+  .cont{
+    &__manager {
+      margin-left: 22%;
+      margin-top: -27.7em;
+      }
+    &__list{
+      margin-top: 15em;
+      margin-left: 21%;
+    }
+    &__img{
+      width: 58%;
+      margin-left: 41.5%;
+      margin-top: -1em;
+      background-position: -8em 17em;
+    }
+  }
+}
+@media (max-width:565px) {
+  .cont{
+    &__bar{
+          width: 11em;
+    }
+  }
+}
+@media (max-width:525px) {
+  .cont{
+    &__img{
+      width: 60%;
+    }
+  }
+}
+@media (max-width:485px) {
+  .cont{
+    &__img{
+      width: 67%;
+    }
+  }
+}
+@media (max-width:450px) {
+  .cont{
+    &__img{
+      width: 73%;
+    }
+  }
+}
+@media (max-width:410px) {
+  .cont{
+    &__img{
+      width: 82%;
+    }
+  }
+}
+@media (max-width:365px) {
+  .cont{
+    &__img{
+      width: 95%;
+    }
+  }
+}
+@media (max-width:347px) {
+  .cont{
+    &__img{
+      width: 100%;
+    }
+  }
 }

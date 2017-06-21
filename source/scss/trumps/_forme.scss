@@ -6,4 +6,48 @@
 		&__title{
 	 	@include triTitle();
 		}
+    &__tLittle{
+      @include triTitle();
+    left: 46.5%;
+    }
+}
+
+@media (max-width:630px) {
+  .main{
+    &__title{
+      left: 39%;
+
+    }
+    &__tLittle{
+      @include triTitle();
+
+    left: 42%;
+    }
+  }
+}
+@media (max-width:530px) {
+  .main{
+    &__title{
+      left: 34%;
+
+    }
+    &__tLittle{
+      @include triTitle();
+
+    left: 40%;
+    }
+  }
+}
+@media (max-width:440px) {
+  .main{
+    &__title{
+      top: -0.2em;
+      left: 31%;
+    }
+    &__tLittle{
+      @include triTitle();
+        //top: -0.2em;
+        left: 38%;
+    }
+  }
 }

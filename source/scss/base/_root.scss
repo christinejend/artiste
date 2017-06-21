@@ -1,5 +1,5 @@
 /* Christine Jendrzejczyk
-	05/02/2017
+	13/05/2017
  	Artiste
 		ROOT  - base*/
 
@@ -25,6 +25,7 @@ body{
 }
 a{
 	text-decoration: none;
+	transition: 0.2s linear;
 }
 p{
 	line-height: 1.7;
